@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+    background-image: url(gambar/4.jpeg);
+}
+.background{
+    width: 310px;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 48%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 600px;
+    width: 400px;
+    background-color: rgba(230, 242, 255, 0.26);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.3px;
+    outline: none;
+    border: none;
+    text-decoration: 0px;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(194, 125, 125, 0.644);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #97ec70;
+    color: #000000;
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #6684bb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+h4{
+    font-size: 20px;
+
+    text-align: center;
+    color: rgb(121, 106, 255);
+}
+
+    </style>
+</head>
+<body>
+    <form action="dashboard.php" method="post">
+    <div class="background">
+        
+     <div class="imgcontainer">
+    </div>
+        <h4>Silahkan Login</h4><br>
+
+        <div class="container"><br>
+        <input type="text" placeholder="Masukan Username" name="uname" required>
+        <br>
+        <input type="password" placeholder="Masukan Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <button type="text"><a href="landingpage.html">Batal Login</a></button>
+        
+        <h4 style=" color: rgb(255, 255, 255);">Belum Punya Akun?</h3>
+        <button type="text"><a href="registrasi.html">Silahkan Registrasi</a></button>
+        </div>
+        
+    </form>
+</body>
+</html>
